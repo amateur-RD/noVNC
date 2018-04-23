@@ -241,6 +241,10 @@ var RFB;
             }
 
             this._updateState('connect');
+            
+            //去掉输入密码页面
+            this._rfb_password = '123456';
+            return true;
         },
 
         disconnect: function () {
